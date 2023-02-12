@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+    height: 200vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fa-solid {
+    transition: all 0.3s;
+}
+
+/*#region Header*/
+header {
+    background-color: #343a40;
+    padding: 15px 0px;
+}
+
+.container {
+    display: flex;
+    width: 70%;
+    margin: auto;
+}
+
+nav {
+    width: 70%;
+}
+
+nav ul {
+    display: flex;
+    line-height: 2;
+}
+
+nav .menu>li {
+    margin-right: 30px;
+    font-size: 17px;
+    padding: 5px 0;
+}
+
+nav ul li a {
+    color: rgb(202, 202, 202);
+    transition: all 0.3s;
+
+}
+
+nav .menu li:hover .submenu {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+nav .menu li a .fa-angle-down {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+nav .menu li:hover a .fa-angle-down {
+    transform: rotate(180deg);
+}
+
+.submenu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #fff;
+    width: 160px;
+    left: 365px;
+    top: 60px;
+    transition: all 0.3s;
+}
+
+.submenu li a {
+    color: #000;
+}
+
+.register {
+    width: 30%;
+    text-align: right;
+}
+
+.register input {
+    border: 1px solid #7cbd1e;
+    background-color: transparent;
+    color: #fff;
+    padding: 8px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register input:first-child:hover {
+    background-color: #7cbd1e;
+}
+
+.register input:last-child {
+    background-color: #7cbd1e;
+}
+
+.register input:last-child:hover {
+    background-color: #669c1a;
+    border-color: #669c1a;
+
+}
+
+.p-relative {
+    position: relative;
+}
+
+.SecondSubMenu {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 140px;
+    top: 0;
+    width: 150px;
+    background-color: #fff;
+}
+
+.submenu li:hover .SecondSubMenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.submenu,
+.SecondSubMenu {
+    padding: 8px 0px;
+    padding-left: 15px;
+    box-shadow: 0 5px 10px 1px #6d6d6d;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.submenu li a .fa-angle-right {
+    margin-left: 40px;
+    font-size: 12px;
+}
+
+.submenu li:hover a .fa-angle-right {
+    transform: rotate(90deg);
+}
+
+.submenu li a:hover {
+    color: #669c1a;
+}
+
+.menu li a {
+    width: 100%;
+    display: inline-block;
+}
+
+.nav-item:hover {
+    color: #fff;
+
+}
+
+.active {
+    color: #fff;
+}
+
+/*#endregion*/
+.bg-image {
+    background-image: url(xhero_bg_1.jpg.pagespeed.ic.26r6-2sFxn.webp);
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-position: 50% -75px;
+    position: relative;
+    z-index: -100;
+}
+
+.bg-overlay {
+    width: 100%;
+    height: calc(100vh - 74px);
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    z-index: -99;
+}
+
+.bg-content {
+    color: #fff;
+    z-index: 999;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+.bg-content .register {
+    width: 100%;
+    text-align: inherit;
+    margin-top: 15px;
+}
